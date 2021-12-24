@@ -20,18 +20,17 @@ const jwtAuthWithSalesforce = async ({ payload, context, next }) => {
     // Cache connection object for 10 minutes in the app
     if (connectionCache.has(slackUserId)) {
         sfConnection = connectionCache.get(slackUserId);
-        context.hasAuthorized = true;
     } else {
         try {
             sfConnection = await sf.connect();
-            context.sfconnection = sfConnection;
-            context.hasAuthorized = true;
             connectionCache.set(slackUserId, sfConnection);
         } catch (e) {
             console.log(e);
             throw new Error(e.message);
         }
     }
+    context.sfconnection = sfConnection;
+    context.hasAuthorized = true;
     await next();
 };
 

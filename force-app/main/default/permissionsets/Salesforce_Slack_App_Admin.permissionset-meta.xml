@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Provides access to the Connected App for JWT Authentication between Slack and Salesforce</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Salesforce Slack App Admin</label>
+</PermissionSet>

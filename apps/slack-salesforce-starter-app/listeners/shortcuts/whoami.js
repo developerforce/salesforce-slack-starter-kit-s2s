@@ -1,9 +1,9 @@
 const { whoamiresponse } = require('../../user-interface/modals');
 
-const whoamiCallback = async ({ shortcut, ack, client }) => {
+const whoamiCallback = async ({ shortcut, ack, client, context }) => {
     try {
         await ack();
-        const conn = await sf.sfconnection();
+        const conn = await context.sfconnection();
         const currentuser = await conn.identity();
         // Call the views.open method using one of the built-in WebClients
         await client.views.open({

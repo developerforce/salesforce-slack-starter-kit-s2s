@@ -6,6 +6,7 @@
     <logoUrl
   >https://c1.sfdcstatic.com/content/dam/sfdc-docs/www/logos/salesforce-logo-cloud.png</logoUrl>
     <oauthConfig>
+        <callbackUrl>http://localhost:8080/oauthcallback</callbackUrl>
         <consumerKey>{CONSUMERKEY}</consumerKey>
 		<certificate>{CERTIFICATE}</certificate>
         <scopes>Basic</scopes>

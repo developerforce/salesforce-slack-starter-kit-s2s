@@ -1,4 +1,4 @@
-# Salesforce Slack Starter Kit (Server to Server Intergration)
+# Salesforce Slack Starter Kit (Server to Server Integration)
 
 Before looking into this project, we recommend you look into [FOYER](https://developer.salesforce.com/blogs/2021/09/introducing-foyer-native-slack-integration-for-the-salesforce-platform) (currently in pilot for ISVs). Be sure to check back Salesforce [developer blog](https://developer.salesforce.com/blogs) regularly for announcements on future milestones of FOYER. If you want to become part of the pilot, contact your technical account manager.
 
